@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# Source: https://stackoverflow.com/questions/26599137/merge-csvs-in-python-with-different-columns
 import csv
 import os
 import sys
@@ -28,7 +27,7 @@ with open(out_fname, 'w', newline="") as f_out:
     for filename in inputs:
         print(f'processing {filename}')
         with open(filename, 'r', newline="") as f_in:
-            reader = csv.DictReader((line.replace('\0', ' ') for line in f_in))  # Uses the field names in this file. Also removing NULL bytes
+            reader = csv.DictReader((line.replace('\0', ' ') for line in f_in))  # Uses the field names in this file. Also remove NULL bytes
             last_line = ''
             for line in reader:
                 writer.writerow(line)
