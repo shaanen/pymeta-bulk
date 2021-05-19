@@ -3,7 +3,7 @@ Run [m8r0wn/pymeta](https://github.com/m8r0wn/pymeta) against multiple domains a
 
 1. Install [m8r0wn/pymeta](https://github.com/m8r0wn/pymeta)
 2. Put all domains in a file called "urls.txt".
-3. Run the following to use pymeta against the domains in urls.txt. Use your favourite VPN CLI client to switch IPs in order to circumvent Captchas.
+3. Run the following to use Pymeta against the domains in urls.txt. Use your favourite VPN CLI client to switch IPs in order to circumvent Captchas.
 ```bash
 while IFS= read -r line
 do
